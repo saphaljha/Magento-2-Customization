@@ -1,0 +1,30 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+	<head>
+        <title>Magento Customization</title>
+        <!--
+		demo
+		<css src="Saphal_MagentoCustomization::css/css.css"/>
+		<script src="Saphal_MagentoCustomization::js/js.js"/>
+		<css src="jquery/fileUploader/css/jquery.fileupload-ui.css"/>
+		<script src="path/file.js" defer="defer"/>
+		<link src="http://url.com" src_type="url"/>
+		<remove src="path/remove/file.css"/>
+
+		-->
+    </head>
+
+    <body>
+
+
+        <referenceContainer name="sidebar.main">
+            <block class="Saphal\MagentoCustomization\Block\Index\Sidebar" name="magentocustomization_index_sidebar" before="-" template="Saphal_MagentoCustomization::magentocustomization_index_sidebar.phtml"/>
+        </referenceContainer>
+
+        <referenceContainer name="content">
+            <block class="Saphal\MagentoCustomization\Block\Index\Index" name="magentocustomization_index_index" template="Saphal_MagentoCustomization::magentocustomization_index_index.phtml"/>
+        </referenceContainer>
+
+
+    </body>
+</page>
